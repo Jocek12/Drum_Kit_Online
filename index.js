@@ -13,6 +13,14 @@ for ( let i = 0; i < numberOfDrumButtons; i++ )
     });
 }
 
+document.addEventListener("keydown", function(event) {
+
+    makeSound(event.key);
+
+    buttonAnimation(event.key);
+
+});
+
 
 function makeSound(key) {
 
